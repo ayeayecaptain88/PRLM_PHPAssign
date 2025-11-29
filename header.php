@@ -13,22 +13,22 @@
 
 
         .top-banner {
-            width: 100%;                 
-            height: 500px;               
-            background-color: #b7e3ea; 
+            width: 100%;
+            height: 40vh;              
+            max-height: 500px;         
+            background-color: #b7e3ea;
             display: flex;
             justify-content: center;
             align-items: center;
             border-bottom: 3px solid #8fc8d1;
-            overflow: hidden;           
+            overflow: hidden;
         }
 
         .top-banner img {
-            height: 100%;                
-            width: auto;                 
-            object-fit: cover;           
+            width: 100%;               
+            height: 100%;              
+            object-fit: cover;         
         }
-
 
         .main-title {
             text-align: center;
@@ -103,6 +103,12 @@
             border-left: 4px solid #4daab4;
             padding: 10px;
             margin-top: 15px;
+        }
+
+        @media (max-width: 480px) {
+            .top-banner {
+                height: 30vh;
+            }
         }
     </style>
 </head>
