@@ -5,10 +5,11 @@
     <title>MedExpress Pharmacy Supply</title>
 
     <style>
-        body {
+        body{
+            font-family: Arial;
+            background: #e8f6f9;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e8f6f9; 
+            padding: 20px;
         }
 
 
@@ -28,6 +29,26 @@
             width: 100%;               
             height: 100%;              
             object-fit: cover;         
+        }
+
+        nav {
+            width: 100%;
+            background: #a9dee5;
+            padding: 12px 0;
+            text-align: center;
+            border-bottom: 2px solid #7fbfc7;
+        }
+
+        nav a {
+            color: #03484d;
+            font-weight: bold;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #0a6067;
         }
 
         .main-title {
@@ -109,6 +130,10 @@
             .top-banner {
                 height: 30vh;
             }
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
         }
     </style>
 </head>
@@ -118,9 +143,16 @@
     <img src="img/Banner 2.png" alt="Banner Image Placeholder">
 </div>
 
+<nav>
+    <a href="medExpress.php">Control Structures</a>
+    <a href="functions.php">Functions</a>
+</nav>
+
 <div class="main-title">
     MedExpress Pharmacy Inventory Supply
 </div>
+
+
 
 <div class="content-area">
 
