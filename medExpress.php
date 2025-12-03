@@ -69,12 +69,12 @@ for ($i=0; $i<count($inventory); $i++){
     <style>
         body{margin:0;font-family:Arial;background:#eaf8ff;color:#063a58;}
         .wrapper{width:90%;margin:25px auto;}
-        h2{color:#0b5cd6;}
+        h2{color:#156e75;}
         .box{background:#fff;padding:15px;border-radius:10px;border:1px solid #b7d8ea;margin-top:20px;}
         input, select{width:95%;padding:8px;margin-top:6px;border:1px solid #9ec8dd;border-radius:6px;}
-        button{margin-top:10px;padding:10px 18px;background:#0d6efd;color:white;border:none;border-radius:6px;cursor:pointer;}
+        button{margin-top:10px;padding:10px 18px;background:#9bd3d8;color:white;border:none;border-radius:6px;cursor:pointer;}
         table{width:100%;border-collapse:collapse;margin-top:15px;}
-        th{background:#0d6efd;color:white;padding:10px;}
+        th{background:#9bd3d8;color:#03484d;padding:10px;}
         td{padding:10px;border:1px solid #bdd7e6;background:#fff;}
         .low{background:#ffe2e2;color:#d10000;font-weight:bold;}
         .discount-tag{padding:2px 6px;background:#2e7d32;color:white;border-radius:4px;font-size:12px;}
@@ -115,7 +115,7 @@ for ($i=0; $i<count($inventory); $i++){
     for($i=0;$i<count($inventory);$i++){
         $isLow = $inventory[$i]['stock']<=$lowStockLimit;
         $finalPrice = $inventory[$i]['price'];
-        if($isLow) $finalPrice = $inventory[$i]['price'] - ($inventory[$i]['price']*$discountRate);
+        if($isLow) $finalPrice = $inventory[$i]['price'] - ($inventory[$i]['price'] * $discountRate);
 
         echo "<tr>";
         echo "<td>".$inventory[$i]['name']."</td>";
